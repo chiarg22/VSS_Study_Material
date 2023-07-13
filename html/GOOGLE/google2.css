@@ -1,0 +1,99 @@
+body
+{
+    margin: 0;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: black solid 1px;
+    padding-bottom: 0.5rem;
+  }
+  .image123 img {
+    /* height: 30px; */
+    width: 26px;
+    border-radius: 50%;
+  }
+  .class4 {
+    font-size: x-small;
+  }
+  .heady {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 10px;
+    align-items: center;
+    padding-top: 5px;
+  }
+  .google
+  {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+  }
+  .image2 img{
+    /* height:280px;  */
+    width:300px; 
+  }
+  .search
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    border:2px solid black;
+    border-radius: 50px;
+    padding:0 1rem;
+    
+  }
+  .center{
+    display: flex;
+justify-content: center;
+align-items: center;
+height: 90vh;
+flex-direction: column;
+  }
+  .input
+  {
+   width: 250px;
+outline: none;
+border: none;
+  }
+  .class3
+  {
+  display: flex;
+  max-width: 450px;
+ justify-content: center;
+ gap:45px; 
+flex-wrap: wrap;
+margin-top: 2rem;
+align-items: center;
+padding: ;
+  }
+  .image123 ,.class4
+  {
+    display: flex;
+    align-items: center;
+  }
+  .flexyyy
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image123
+  {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.image1234 img{ 
+    width: 26px;
+    border-radius: 50%;   
+}

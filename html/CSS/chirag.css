@@ -1,0 +1,36 @@
+    /* .list
+    {
+        background-color: black;
+        color:rgb(7,255,70);
+
+    } */
+    /* #yo
+    {
+        color: aqua;
+    }
+    #oo
+    {
+        color: blueviolet   ;
+    } */
+
+    .list {
+        color: green;
+      }
+      
+      .chirag-room {
+        color: pink;
+        background-color: aqua;
+      }
+      
+      #home {
+        color: blue;
+      }
+      
+      #green {
+        color: green;
+      }
+      
+      span {
+        color: red;
+      }
+      

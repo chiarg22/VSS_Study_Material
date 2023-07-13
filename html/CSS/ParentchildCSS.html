@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+      }
+      .box-one {
+        background-color: rgb(255, 221, 0);
+        width: 50%;
+        height: 200px;
+        border: 1px solid black;
+      }
+      /* .box-two {
+        background-color: rgb(232, 109, 234);
+        padding: 4px;
+        width: 80%;
+        height: 180px;
+        border: 1px solid black;
+        Child, as inner child will change acc to the screen as percentage has been used here. 
+      } */
+
+      .box-two {
+        background-color: rgb(232, 109, 234);
+        padding: 4px;
+        width: 80%;
+        height: 10%;
+        border: 1px solid black;
+      }
+      /* Child, as inner child will not change acc to the screen as percentage has not been used here. */
+    </style>
+  </head>
+  <body>
+    <div class="box-one">
+      <div class="box-two">Sushmitha</div>
+    </div>
+  </body>
+</html>
+
+<!-- Font - rem
+Body - width(vw), heigth(vh)
+Other element - width (px,%), heigth (px,%) -->

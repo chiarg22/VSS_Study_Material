@@ -1,0 +1,131 @@
+body {
+        margin: 0;
+      }
+.desktop-header {
+        background-color: white;
+        padding: 0px;
+        color: black;
+        border-bottom: black solid 1px;
+
+        /* gap:15px; */
+      }
+.Papaclass{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* .class1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25px;
+    background-color: white;
+    gap: 5px;
+    
+
+} */
+.image123 img{
+    height: 400px;
+    width: 320px;
+}
+.class2
+{
+    color: black;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace; 
+   font-size: small;
+   padding: 10px;
+}
+.class3 {
+        width: 70px;
+        padding: 3px;
+        border-style:groove ;
+        /* padding-left: 30px; */
+        font-size: x-small;
+      }
+.class4
+{
+    font-size: small;
+}
+
+/* .heady
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 20px;
+}
+.heady li{
+    list-style-type: none;
+
+} */
+/* .xyz{
+    display: flex;
+    justify-content: space-between;
+    /* width: 50%; */
+/* } */ */
+/* .abc
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 40%;  */
+/* } */ */
+.efg
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+
+    /* width: 40%; */
+}
+/* .input {
+    
+    background: transparent;
+    width: 270px;
+    padding: 6px;
+    outline: none;
+    /* font-size: x-small; */
+    /* border: none;
+
+  } */
+ul li
+  {
+    list-style-type: none;
+  }
+.ul2
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 15px;
+
+
+}
+.class5
+{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 10px;
+}
+/* .new
+{
+    max-width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.new2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+} */
