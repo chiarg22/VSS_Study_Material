@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+      .newclass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+      }
+      .newclass2 {
+        background-color: greenyellow;
+      }
+      .newclass2:hover {
+        zoom: 500%;
+        transform: rotate(720deg);
+        transition: 0.8s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer"></div>
+  </body>
+</html>
+<script>
+  const namesList = [
+    10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100,
+    105, 102, 104, 2000, 500,
+  ];
+  const x = document.getElementById("outer");
+  for (let i = 0; i < namesList.length; i++) {
+    const newtag = document.createElement("div");
+    const newtag2 = document.createElement("div2");
+    newtag2.innerText = namesList[i];
+    newtag.className = "newclass";
+    newtag2.className = "newclass2";
+
+    console.log(newtag);
+    if (namesList[i] % 2 == 0) {
+      newtag.style.backgroundColor = "red";
+    } else {
+      newtag.style.backgroundColor = "blue";
+    }
+    newtag.addEventListener("click", function () {
+      //   alert(newtag2.innerHTML, "hi hai mri jaaaan");// It will not work as the alert function only takes only 1 argument hence be careful from the next time.
+      const message =
+        "Click ku kar rha hai yarrrrr " +
+        newtag2.innerHTML +
+        " hi hai mri jaaaan";
+      alert(message);
+    });
+    newtag.appendChild(newtag2);
+    x.appendChild(newtag);
+  }
+</script>
