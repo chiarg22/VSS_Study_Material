@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #charu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+      }
+      .inner {
+        background-color: palegreen;
+        height: 15px;
+        width: 15px;
+      }
+      /* .inner:hover {
+        zoom: 1300%;
+        border-radius: 50%;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div id="charu"><div class="inner">YO ANKIT</div></div>
+      <!-- // here the yo ankit should come in inner div but going out why? -->
+    </div>
+  </body>
+</html>
+<script>
+  const x = document.getElementById("charu");
+  console.log("Data inside the element is this :", x.innerHTML);
+  x.style.backgroundColor = "red";
+  x.style.color = "yellow";
+  x.style.height = "200px";
+  x.style.width = "200px";
+  x.addEventListener(
+    "click",
+    function (
+      k // here if we are not giving the k like if we are keeping it empty it is not working however in JS9 it is working while it is empty. Also please explain the wokring of eventlistener {
+    ) {
+      alert("Ankit bhau is the CEO of VSS");
+      // alert(x.target.innerText);
+      alert(k.target.innerText);
+      // Why k is working not x???
+    }
+  );
+</script>
