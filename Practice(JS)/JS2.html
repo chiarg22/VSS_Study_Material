@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .buddy {
+        height: 100px;
+        width: 100px;
+        background-color: whitesmoke;
+        font-family: "Courier New", Courier, monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+      }
+      .old {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+      }
+      .outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .buddy1:hover {
+        zoom: 500%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="new">
+      <div class="buddy"><div class="buddy1">A</div></div>
+      <div class="buddy"><div class="buddy1">B</div></div>
+      <div class="buddy"><div class="buddy1">C</div></div>
+      <div class="buddy"><div class="buddy1">D</div></div>
+      <div class="buddy"><div class="buddy1">E</div></div>
+    </div>
+    <div class="outer">
+      <div class="old">Chirag is a good boy</div>
+    </div>
+  </body>
+</html>
+<script>
+  const x = document.getElementById("new");
+  console.log(x);
+  console.log("Length1", x.length);
+  const y = document.getElementsByClassName("buddy");
+  console.log(y);
+  console.log("Length2", y.length);
+  z = document.getElementsByClassName("old");
+  console.log(z);
+  console.log("Length2", z.length);
+
+  for (let i = 0; i < y.length; i++) {
+    y[i].style.color = "red";
+    y[i].style.textTransform = "lowercase";
+    y[i].addEventListener("click", function () {
+      alert(y[i].innerText);
+      y[i];
+    });
+
+    // pTag.addEventListener("click", function () {
+    //   alert(x.target.innerText);
+    // });
+  }
+
+  for (let i = 0; i < z.length; i++) {
+    z[i].style.color = "white";
+    z[i].style.textTransform = "uppercase";
+  }
+</script>
